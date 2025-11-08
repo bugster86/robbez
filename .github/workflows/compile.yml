@@ -5,4 +5,9 @@ jobs:
   Compilazione:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Prima Automazione "
+      - run: echo "Prima Automazione"
+      - run: echo "Step di compilazione"
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploy"
