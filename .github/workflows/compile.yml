@@ -1,0 +1,8 @@
+name: Automazione progetto Rubbez
+on: [push]
+
+jobs:
+  Compilazione:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Prima Automazione "
