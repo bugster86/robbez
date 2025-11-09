@@ -17,6 +17,6 @@ jobs:
         working-directory: emsdk
       - name: Aggiungere emsdk e emscripten alla variabile PATH
         run: source "/home/runner/work/robbez/robbez/emsdk/emsdk_env.sh"
-      - run: /home/runner/work/robbez/robbez
+      - run: ls /home/runner/work/robbez/robbez
 
 
