@@ -5,9 +5,19 @@ jobs:
   Compilazione:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Prima Automazione"
-      - run: echo "Step di compilazione"
-  Deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Deploy"
+      - name: Installiamo python3
+        run: apt install -y python3
+      - name: Installiamo git
+        run: apt install -y git
+      - name: Installiamo cmake
+        run: apt install -y cmake
+      - name: Clona emsdk
+        run: git clone https://github.com/emscripten-core/emsdk.git
+      - name: Install emsdk
+        run: ./emsdk install latest
+        working-directory: emsdk
+      - name: Activate emsdk
+        run: ./emsdk activate latest
+        working-directory: emsdk
+
+
