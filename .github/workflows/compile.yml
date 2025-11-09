@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Installiamo python3
-        run: apt install -y python3
+        run: sudo apt install -y python3
       - name: Installiamo git
-        run: apt install -y git
+        run: sudo apt install -y git
       - name: Installiamo cmake
-        run: apt install -y cmake
+        run: sudo apt install -y cmake
       - name: Clona emsdk
         run: git clone https://github.com/emscripten-core/emsdk.git
       - name: Install emsdk
