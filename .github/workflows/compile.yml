@@ -16,7 +16,9 @@ jobs:
         run: ./emsdk activate latest
         working-directory: emsdk
       - name: Aggiungere emsdk e emscripten alla variabile PATH
-        run: source "/home/runner/work/robbez/robbez/emsdk/emsdk_env.sh"
+        run: |
+          source "/home/runner/work/robbez/robbez/emsdk/emsdk_env.sh"
+          echo "PATH=$PATH" >> $GITHUB_ENV
       - name: Checkout Working Copy (Davai Serghiei!)
         uses: actions/checkout@v5
       - run: make build
