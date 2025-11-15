@@ -180,7 +180,7 @@ void ResetMe(int primavolta)
     sprintf(Street, "%s n. %d", tmp, (int)(1 + random(150)));
 
     for (i = 1; i < 10; i++)
-        MaterieMem[i].xxx = 0;
+        MaterieMem[i].xxx = 4;
 
     CalcolaStudio();
 
