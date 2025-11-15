@@ -24,7 +24,6 @@ build: copy
 		-s ASSERTIONS=2 \
 		-s SAFE_HEAP=1 \
 		-s STACK_OVERFLOW_CHECK=2 \
-		-s DEMANGLE_SUPPORT=1 \
 		-s 'ASYNCIFY_IMPORTS=["emscripten_asm_const_int"]' \
 		-s 'EXPORTED_RUNTIME_METHODS=["ccall", "setValue"]' \
 		-s 'EXPORTED_FUNCTIONS=["_main", "_GetDlgItem", "_PostMessage", "_PrintMessages", "_AllocateControl", "_GetTickCount", "_WinMainStartup"]'
