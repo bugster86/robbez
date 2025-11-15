@@ -5,6 +5,8 @@ jobs:
   Compilazione:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Working Copy (Davai Serghiei!)
+        uses: actions/checkout@v5
       - name: Installiamo cmake
         run: sudo apt install -y cmake
       - name: Clona emsdk
@@ -19,8 +21,6 @@ jobs:
         run: |
           source "/home/runner/work/robbez/robbez/emsdk/emsdk_env.sh"
           echo "PATH=$PATH" >> $GITHUB_ENV
-      - name: Checkout Working Copy (Davai Serghiei!)
-        uses: actions/checkout@v5
       - run: make build
 
 
