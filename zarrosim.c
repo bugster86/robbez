@@ -197,7 +197,7 @@ void ResetMe(int primavolta)
         STARTcmdShow = 1;
         timer_active = 1;
         sound_active = 1;
-        euro = 0;
+        euro = 1;
         sesso = 'M';
         strcpy(Nome, "Tizio");
         strcpy(Cognome, "Caio");
