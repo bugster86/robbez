@@ -11,32 +11,28 @@ jobs:
     steps:
       - name: 1. Checkout Working Copy
         # Questo deve essere il primo step per clonare il repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # --- Setup Emscripten (Necessario per trovare emcc) ---
       - name: 2. Installiamo cmake e dependencies
-        run: sudo apt update && sudo apt install -y cmake git
+        run: sudo apt install -y cmake
 
       - name: 3. Clona e installa emsdk
         # Clona emsdk in una cartella temporanea
         run: git clone https://github.com/emscripten-core/emsdk.git
 
-      - name: 4. Installa e attiva emsdk (e aggiorna il PATH)
-        shell: bash
+      - name: Install emsdk
+        run: ./emsdk install latest
+        working-directory: emsdk
+      - name: Activate emsdk
+        run: ./emsdk activate latest
+        working-directory: emsdk
+
+      - name: Aggiungere emsdk e emscripten alla variabile PATH
         run: |
-          cd emsdk
-          # Installa il compilatore
-          ./emsdk install latest
-          
-          # Attiva l'ambiente
-          source ./emsdk_env.sh
-          
-          # SCRIVE il PATH aggiornato nel file $GITHUB_ENV per la persistenza
+          source "/home/runner/work/robbez/robbez/emsdk/emsdk_env.sh"
           echo "PATH=$PATH" >> $GITHUB_ENV
           
-          # [DEBUG] Verifica che emcc sia ora disponibile
-          emcc --version
-
       # --- Compilazione Wasm ---
       - name: 5. Compilazione del Progetto WebAssembly
         # Questa directory (build) è dove dovrai mettere i file .html, .js, .wasm
