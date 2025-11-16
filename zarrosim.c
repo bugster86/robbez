@@ -161,7 +161,7 @@ void ResetMe(int primavolta)
     char tmp[128];
 
     TabbozRedraw = 1;
-    Soldi = 200;
+    Soldi = 20000;
     Paghetta = 30;
     Reputazione = 0;
     Fama = 0;
