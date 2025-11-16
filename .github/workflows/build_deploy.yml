@@ -32,15 +32,11 @@ jobs:
         run: |
           source "/home/runner/work/robbez/robbez/emsdk/emsdk_env.sh"
           echo "PATH=$PATH" >> $GITHUB_ENV
-          
+
       # --- Compilazione Wasm ---
       - name: 5. Compilazione del Progetto WebAssembly
         # Questa directory (build) è dove dovrai mettere i file .html, .js, .wasm
         run: |
-          mkdir build
-          cd build
-          # Esegui la tua build qui. Sostituisci con i tuoi comandi
-          # Esempio tipico per progetti CMake/Wasm:
           make build
           # Assicurati che i file .html/.js/.wasm siano in ./build
 
@@ -55,7 +51,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Carica i file di output (il file .html, .js e .wasm)
-          path: 'build' 
+          path: '.' 
       
       - name: 8. Pubblicazione
         id: deployment
