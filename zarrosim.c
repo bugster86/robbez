@@ -161,7 +161,7 @@ void ResetMe(int primavolta)
     char tmp[128];
 
     TabbozRedraw = 1;
-    Soldi = 10;
+    Soldi = 200;
     Paghetta = 30;
     Reputazione = 0;
     Fama = 0;
@@ -2253,7 +2253,7 @@ char *MostraSoldi(u_long i)
     static char tmp[128];
 
     if (euro)
-        sprintf(tmp, "%lue", (i / 2));
+        sprintf(tmp, "%lu€", (i / 2));
     else if (i == 0)
         sprintf(tmp, "0 L.");
     else
