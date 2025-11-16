@@ -8,6 +8,10 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read     # Necessario per checkout e upload dell'artifact
+      pages: write       # Necessario per l'Action deploy-pages
+      id-token: write    # NECESSARIO PER RISOLVERE L'ERRORE (OIDC)
     steps:
       - name: 1. Checkout Working Copy
         # Questo deve essere il primo step per clonare il repository
@@ -37,8 +41,10 @@ jobs:
       - name: 5. Compilazione del Progetto WebAssembly
         # Questa directory (build) è dove dovrai mettere i file .html, .js, .wasm
         run: |
+          mkdir distro
           make build
           # Assicurati che i file .html/.js/.wasm siano in ./build
+          cp -r -t distro *.html *.wasm *.js resources
 
       # --- Deployment su GitHub Pages ---
       - name: 6. Configurazione per il Deploy
@@ -51,7 +57,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Carica i file di output (il file .html, .js e .wasm)
-          path: '.' 
+          path: 'distro' 
       
       - name: 8. Pubblicazione
         id: deployment
