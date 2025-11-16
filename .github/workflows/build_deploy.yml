@@ -1,0 +1,66 @@
+name: CI/CD WebAssembly (Emscripten & GitHub Pages)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. Checkout Working Copy
+        # Questo deve essere il primo step per clonare il repository
+        uses: actions/checkout@v4
+
+      # --- Setup Emscripten (Necessario per trovare emcc) ---
+      - name: 2. Installiamo cmake e dependencies
+        run: sudo apt update && sudo apt install -y cmake git
+
+      - name: 3. Clona e installa emsdk
+        # Clona emsdk in una cartella temporanea
+        run: git clone https://github.com/emscripten-core/emsdk.git
+
+      - name: 4. Installa e attiva emsdk (e aggiorna il PATH)
+        shell: bash
+        run: |
+          cd emsdk
+          # Installa il compilatore
+          ./emsdk install latest
+          
+          # Attiva l'ambiente
+          source ./emsdk_env.sh
+          
+          # SCRIVE il PATH aggiornato nel file $GITHUB_ENV per la persistenza
+          echo "PATH=$PATH" >> $GITHUB_ENV
+          
+          # [DEBUG] Verifica che emcc sia ora disponibile
+          emcc --version
+
+      # --- Compilazione Wasm ---
+      - name: 5. Compilazione del Progetto WebAssembly
+        # Questa directory (build) è dove dovrai mettere i file .html, .js, .wasm
+        run: |
+          mkdir build
+          cd build
+          # Esegui la tua build qui. Sostituisci con i tuoi comandi
+          # Esempio tipico per progetti CMake/Wasm:
+          make build
+          # Assicurati che i file .html/.js/.wasm siano in ./build
+
+      # --- Deployment su GitHub Pages ---
+      - name: 6. Configurazione per il Deploy
+        # L'Action ha bisogno del nome del repository per costruire l'URL corretto (es. /robbez)
+        uses: actions/configure-pages@v4
+
+      - name: 7. Deploy su GitHub Pages
+        # Questa action prende il contenuto della directory 'build' e lo pubblica
+        # sul branch 'gh-pages' o direttamente sul branch di deploy di Pages.
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Carica i file di output (il file .html, .js e .wasm)
+          path: 'build' 
+      
+      - name: 8. Pubblicazione
+        id: deployment
+        uses: actions/deploy-pages@v4
