@@ -177,7 +177,7 @@ void ResetMe(int primavolta)
     LoadString(hInst, 400, City, (sizeof(City) - 1));
 
     LoadString(hInst, 450, tmp, (sizeof(tmp) - 1));
-    sprintf(Street, "%s n. %d", tmp, (int)(1 + random(150)));
+    sprintf(Street, "%s n. %d", tmp, (int)(1 + 0));
 
     for (i = 1; i < 10; i++)
         MaterieMem[i].xxx = 4;
