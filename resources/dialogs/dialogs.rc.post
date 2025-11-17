@@ -75,13 +75,12 @@ FONT 10, "MS Sans Serif"
    CONTROL "Andrea Bonomi", 110, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 81, 116, 90, 9
    CONTROL "Emanuele Caccialanza", 111, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 81, 124, 90, 9
    CONTROL "###VERSION###", 115, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 39, 15, 99, 9
-   CONTROL "Copyright (C) 1997-2001 by", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 39, 23, 99, 9
-   CONTROL "Questo programma contiene un linguaggio talvolta offensivo; ogni riferimento a persone e cose e' puramente casuale.", -1, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 29, 154, 147, 25
+   CONTROL "Copyright (C) 2025-2040 by", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 39, 23, 99, 9
+   CONTROL "QOgni riferimento a persone/luoghi/cose è voluto e ricercato.", -1, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 29, 154, 147, 25
    CONTROL "", -1, "BorShade", WS_CHILD | WS_VISIBLE | 0x8001, 0, 0, 187, 203
    CONTROL "REDBABY", -1, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 5, 157, 16, 16
    CONTROL "Beta testers:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 6, 143, 56, 9
-   CONTROL "Dino Lucci", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 143, 40, 9
-   CONTROL "Giulio Lucci", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 142, 143, 39, 9
+   CONTROL "Martino Viganò", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 143, 40, 9
    CONTROL "", -1, "BorShade", WS_CHILD | WS_VISIBLE | 0x8001, 3, 3, 181, 38
    CONTROL "", -1, "BorShade", WS_CHILD | WS_VISIBLE | 0x8001, 3, 43, 181, 110
    CONTROL "", -1, "BorShade", WS_CHILD | WS_VISIBLE | 0x8001, 3, 180, 181, 21
