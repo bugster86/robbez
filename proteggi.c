@@ -51,7 +51,7 @@ long     int        xxx2=0;
          char       writebuf[50];
          char       szBuf[256];
 
-// 5 Maggio 1999 Visto che le funzioni MessageBox sono prive del papa'
+// 5 Maggio 1999 Visto che le funzioni MessageBox sono prive della mamma
 // bisogna mettere 0 come hInstance... (primo parametro...)
 
 #define READTHIS 16384
@@ -84,7 +84,7 @@ long     int        xxx2=0;
         exit(1);
     }
 
-// sprintf(writebuf,"t8è+#§ù0hiq"); /* 11 e non uno di piu' */
+// sprintf(writebuf,"t8ï¿½+#ï¿½ï¿½0hiq"); /* 11 e non uno di piu' */
 
     for (i=0; i < 11;i++) {
         writebuf[i]=buf[96+i];

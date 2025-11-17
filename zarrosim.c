@@ -1380,7 +1380,7 @@ BOOL FAR PASCAL Famiglia(HWND hDlg, WORD message, WORD wParam, LONG lParam)
 
     if (message == WM_INITDIALOG)
     {
-        sprintf(tmp, "Papa', mi dai %s ?", MostraSoldi(100));
+        sprintf(tmp, "Mamma, mi dai %s ?", MostraSoldi(100));
         SetDlgItemText(hDlg, 103, tmp);
         SetDlgItemText(hDlg, 104, MostraSoldi(Soldi));
         SetDlgItemText(hDlg, 105, MostraSoldi(Paghetta));
@@ -1455,7 +1455,7 @@ allora si' che i giovani studiavano...",
             SetDlgItemText(hDlg, 104, MostraSoldi(Soldi));
             return (TRUE);
 
-        case 103: // Papa, mi dai 100000 lire ?
+        case 103: // Mamma, mi dai 100000 lire ?
             if (sound_active)
                 TabbozPlaySound(801);
             MessageBox(hDlg,
