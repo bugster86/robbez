@@ -199,8 +199,8 @@ void ResetMe(int primavolta)
         sound_active = 1;
         euro = 1;
         sesso = 'M';
-        strcpy(Nome, "Tizio");
-        strcpy(Cognome, "Caio");
+        strcpy(Nome, "Roberto");
+        strcpy(Cognome, "Denisi");
         CalcolaSesso();
     }
 
