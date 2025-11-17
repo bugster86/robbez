@@ -540,7 +540,7 @@ BOOL FAR PASCAL DueDiPicche(HWND hDlg, WORD message, WORD wParam, LONG lParam)
         // IN QUESTA PARTE C'ERA UN BUG CHE FACEVA CRASCIARE IL TABBOZ SIMULATOR...
 
         if (sesso == 'M')
-            i = 300 + random(20); // 300 -> 319 [sfighe varie]
+            i = 300 + random(4); // 300 -> 303 [sfighe varie]
         else
             i = 1300 + random(20); // 300 -> 319 [sfighe varie]
 
