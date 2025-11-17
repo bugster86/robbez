@@ -171,7 +171,7 @@ void ResetMe(int primavolta)
     giorni_di_lavoro = 0;
     numeroditta = 0;
 
-    strcpy(Residenza, "Lecco");
+    strcpy(Residenza, "Molteno");
     Nometipa[0] = 0;
 
     LoadString(hInst, 400, City, (sizeof(City) - 1));
