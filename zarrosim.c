@@ -1252,7 +1252,7 @@ BOOL FAR PASCAL PersonalInfo(HWND hDlg, WORD message, WORD wParam, LONG lParam)
         if (numeroditta < 1)
         { // Professione
             if (sesso == 'M')
-                sprintf(tmp, "Studente");
+                sprintf(tmp, "Scienziato!");
             else
                 sprintf(tmp, "Studentessa");
         }
