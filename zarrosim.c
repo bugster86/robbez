@@ -189,8 +189,8 @@ void ResetMe(int primavolta)
     x_giornoset = 1;
     x_anno_bisesto = 0;
 
-    comp_mese = random(12) + 1;
-    comp_giorno = random(InfoMese[comp_mese - 1].num_giorni) + 1;
+    comp_mese = 11;
+    comp_giorno = 18;
 
     if (primavolta)
     { // Se e' la prima volta che uso il tabboz resetta anche la configurazione...
