@@ -171,12 +171,12 @@ void ResetMe(int primavolta)
     giorni_di_lavoro = 0;
     numeroditta = 0;
 
-    strcpy(Residenza, "Milano");
+    strcpy(Residenza, "Lecco");
     Nometipa[0] = 0;
 
-    LoadString(hInst, (400 + random(22)), City, (sizeof(City) - 1));
+    LoadString(hInst, 400, City, (sizeof(City) - 1));
 
-    LoadString(hInst, (450 + random(50)), tmp, (sizeof(tmp) - 1));
+    LoadString(hInst, 450, tmp, (sizeof(tmp) - 1));
     sprintf(Street, "%s n. %d", tmp, (int)(1 + random(150)));
 
     for (i = 1; i < 10; i++)
