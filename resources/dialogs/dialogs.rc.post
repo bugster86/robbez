@@ -85,12 +85,12 @@ FONT 10, "MS Sans Serif"
    CONTROL "", -1, "BorShade", WS_CHILD | WS_VISIBLE | 0x8001, 3, 3, 181, 38
    CONTROL "", -1, "BorShade", WS_CHILD | WS_VISIBLE | 0x8001, 3, 43, 181, 110
    CONTROL "", -1, "BorShade", WS_CHILD | WS_VISIBLE | 0x8001, 3, 180, 181, 21
-   CONTROL "http://github.com/andreax79/tabboz", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 6, 182, 175, 8
+   CONTROL "https://github.com/bugster86/robbez", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 6, 182, 175, 8
    CONTROL "Obscured Truckware", 116, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 39, 31, 99, 9
    CONTROL "Daniele Gazzarri", 112, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 81, 132, 90, 9
    CONTROL "", -1, "BorShade", WS_CHILD | WS_VISIBLE | 0x2, 3, 141, 181, 2
    CONTROL "ZEURO", -1, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 9, 23, 16, 16
-   CONTROL "e-mail: andrea@bonomi.info", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 6, 190, 103, 8
+   CONTROL "e-mail: bugster86@gmail.com", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 6, 190, 103, 8
 }
 
 4 DIALOG 17, 25, 209, 128

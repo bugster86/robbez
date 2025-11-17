@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://andreax79.github.io/tabboz/" target="_blank"><img alt="Tabboz Simulator" src="https://github.com/andreax79/tabboz/assets/1288154/64269165-8958-4f3a-945a-82c3ffffd4de"/></a>
+  <a href="https://github.com/bugster86/robbez" target="_blank"><img alt="Tabboz Simulator" src="https://github.com/andreax79/tabboz/assets/1288154/64269165-8958-4f3a-945a-82c3ffffd4de"/></a>
 </div>
 <br/>
 
@@ -8,7 +8,7 @@ Simply tap the icon to launch the Tabboz Simulator directly in your browser.
 ## 🖥️ Web development
 
 <div align="center">
-  <a href="https://andreax79.github.io/tabboz/" target="_blank"><img alt="Tabboz Simulator Screenshot" src="https://github.com/andreax79/tabboz/assets/1288154/0999ef77-3e7a-45a0-9a0b-1206a6f5bddd"/></a>
+  <a href="https://github.com/bugster86/robbez" target="_blank"><img alt="Robbez Simulator Screenshot" src="https://github.com/andreax79/tabboz/assets/1288154/0999ef77-3e7a-45a0-9a0b-1206a6f5bddd"/></a>
 </div>
 <br/>
 

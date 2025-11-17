@@ -2268,11 +2268,7 @@ void Atinom(HANDLE hInstance)
 {
 
     MessageBox(hInstance,
-               "Il biglietto e' valido solo dopo la convalida.Il biglietto deve essere conservato per tutta la durata \
-del viaggio. Il diritto a viaggiare cessa al termine della tratta corrispondente al valore del biglietto. \
-Il passeggero che al controllo non fosse in grado di presentare il biglietto o lo presentasse irriconoscibile, \
-o comunque non valido, verra' abbattuto. La notifica del decesso verra' inviata ai parenti solo previo pagamento \
-delle spese postali.",
+               "Non fate i furbetti!",
                "Norme di utilizzo", MB_OK | MB_ICONINFORMATION);
 }
 
