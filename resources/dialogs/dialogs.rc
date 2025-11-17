@@ -310,7 +310,7 @@ FONT 10, "MS Sans Serif"
    CONTROL "Residenza", -1, "BorStatic", WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 75, 48, 9
    CONTROL "Stato civile", -1, "BorStatic", WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 99, 48, 9
    CONTROL "", 111, EDIT, ES_LEFT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 62, 75, 40, 9
-   CONTROL "Italiana", -1, "BorStatic", WS_CHILD | WS_VISIBLE | WS_GROUP, 62, 63, 35, 9
+   CONTROL "Calabrese", -1, "BorStatic", WS_CHILD | WS_VISIBLE | WS_GROUP, 62, 63, 35, 9
    CONTROL "Professione", -1, "BorStatic", WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 111, 48, 9
    CONTROL "xxx", 110, "BorStatic", WS_CHILD | WS_VISIBLE | WS_GROUP, 63, 99, 39, 9
    CONTROL "xxx", 108, "BorStatic", WS_CHILD | WS_VISIBLE | WS_GROUP, 63, 111, 39, 9
